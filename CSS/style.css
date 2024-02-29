@@ -27,7 +27,8 @@ main {
     cursor: pointer;
     font-weight: 700;
 }
-section{
+
+section {
     margin-bottom: 100px;
 }
 
@@ -99,46 +100,55 @@ a {
 }
 
 /* Popular section */
-.popular-title{
+.popular-title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 50px;
 }
-.popular{
+
+.popular {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
     padding: 0px 100px;
 }
-.product-box{
+
+.product-box {
     box-shadow: 0 0px 20px 5px gray;
     padding: 15px;
     border-radius: 5px;
     font-weight: 700;
 }
-.product-box img{
+
+.product-box img {
     display: block;
     margin: 0 auto;
     width: 100%;
 }
-.product-box>h3{
+
+.product-box>h3 {
     font-size: 2rem;
 }
-.product-box>h3{
+
+.product-box>h3 {
     padding: 15px 0;
 }
-.product-box>p{
+
+.product-box>p {
     padding-bottom: 15px;
     color: gray;
 }
-.product-star{
+
+.product-star {
     color: orange;
     padding: 10px 0;
 }
-.product-star>span{
+
+.product-star>span {
     color: gray;
 }
-.see-more a{
+
+.see-more a {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -147,33 +157,106 @@ a {
     color: #E02C6D;
     font-weight: 700;
 }
+
 /* gear section start */
-.gear-section{
+.gear-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px
-    ;
+    gap: 100px;
 }
-.gear-content>h1{
+
+.gear-content>h1 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
-.gear-content>p{
+
+.gear-content>p {
     font-weight: 700;
     padding-bottom: 30px;
 }
 
 /* footer */
-.footer{
+.footer {
     background-color: rgb(4, 4, 66);
     color: white;
     text-align: center;
     padding: 60px 0;
 }
-.footer-content h1,p{
+
+.footer-content h1,
+p {
     padding: 4px 0px;
 }
-.social i{
+
+.social i {
     padding: 8px 5px;
+}
+
+
+
+/* Responsive design */
+
+/* for Small Device */
+@media screen and (max-width: 576px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .company {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .popular {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .gear-section {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .see-more a{
+        padding-right: 20px;
+    }
+}
+
+
+
+
+/* Respnsive for Medium Device */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+
+    nav {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .company {
+        gap: 10px;
+    }
+
+    .popular {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 10px;
+    }
+
+    .gear-section {
+        flex-direction: column;
+    }
 }
