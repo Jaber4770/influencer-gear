@@ -11,7 +11,7 @@
 /* Shared style */
 header,
 main {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -129,6 +129,7 @@ a {
 }
 .product-box>p{
     padding-bottom: 15px;
+    color: gray;
 }
 .product-star{
     color: orange;
@@ -136,4 +137,29 @@ a {
 }
 .product-star>span{
     color: gray;
+}
+.see-more a{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 100px;
+    margin-top: 30px;
+    color: #E02C6D;
+    font-weight: 700;
+}
+/* gear section start */
+.gear-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px
+    ;
+}
+.gear-content>h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.gear-content>p{
+    font-weight: 700;
+    padding-bottom: 30px;
 }
