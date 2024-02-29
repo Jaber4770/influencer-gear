@@ -211,9 +211,9 @@ p {
     }
 
     .company {
-        flex-direction: column;
-        gap: 30px;
-        justify-content: center;
+        flex-wrap: wrap;
+        border: none;
+        gap: 10px;
     }
 
     .popular {
@@ -222,11 +222,11 @@ p {
     }
 
     .gear-section {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 50px;
     }
 
-    .see-more a{
+    .see-more a {
         padding-right: 20px;
     }
 }
